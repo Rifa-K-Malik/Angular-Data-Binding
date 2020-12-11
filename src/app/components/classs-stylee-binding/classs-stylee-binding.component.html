@@ -1,0 +1,42 @@
+<!-- static binding -->
+<div class="box" [class.myclass]="true">
+    Box1
+</div><br>
+
+<!-- Dynamic binding using property -->
+<div class="box" [class.myclass]="myPro">
+    Box2
+</div>
+
+<!-- style binding using property -->
+<div class="box" [style.margin]="myStyle1">
+    Box3
+</div><br>
+
+<!-- style binding using Ternary Operation -->
+<div class="box" [style.margin]="isActive? myStyle1 : '5px' ">
+    Box4
+</div><br>
+
+<!-- To bind multiple class -->
+<div class="box" [ngClass]=" 'class1 class2 class3' ">
+    Box5
+</div><br>
+
+<!-- To bind multiple class using property-->
+<div class="box" [ngClass]="mltClasses">
+    Box6
+</div><br>
+
+<!-- To bind multiple style -->
+<div class="box" [ngStyle]="{
+    'background': 'red',
+    'border': '10px solid black'
+}">
+    Box7
+</div><br>
+
+<!-- another way to bind multiple style using property -->
+<div class="box" [ngStyle]="mltStyle">
+    Box8
+</div>
